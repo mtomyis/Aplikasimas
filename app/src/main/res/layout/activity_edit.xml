@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginRight="16dp"
+    android:orientation="vertical"
+    tools:context=".EditActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/id_etgl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:hint="Tanggal"
+            android:focusable="false"
+            android:inputType="date"
+            android:layout_weight="1"
+            android:ems="12"
+            android:textColor="@android:color/black" />
+        <EditText
+            android:id="@+id/id_ejam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:hint="Jam"
+            android:layout_weight="1"
+            android:inputType="time"
+            android:ems="12"
+            android:focusable="false"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/id_euser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:hint="Pengguna"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/id_ekategori"
+        android:hint="kategori"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:entries="@array/kategori" />
+
+    <EditText
+        android:id="@+id/id_eket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Keterangan"
+        android:textColor="@android:color/black"
+        android:inputType="text|textMultiLine|textCapSentences"
+        android:maxLength="21"
+        android:maxLines="5"
+        android:gravity="left" />
+
+    <EditText
+        android:id="@+id/id_ejam_selesai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Jam Penanganan"
+        android:textColor="@android:color/black"
+        android:inputType="time"
+        android:maxLength="21"
+        android:focusable="false"
+        android:maxLines="5"
+        android:gravity="left" />
+
+    <EditText
+        android:id="@+id/id_esolusi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Solusi"
+        android:textColor="@android:color/black"
+        android:inputType="text|textMultiLine|textCapSentences"
+        android:maxLength="21"
+        android:maxLines="5"
+        android:gravity="left" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="done"
+            android:layout_margin="4dp"
+            android:background="@color/cardview_light_background"
+            android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:id="@+id/imgip"
+            android:background="@color/cardview_light_background"
+            android:src="@drawable/success"
+            android:layout_centerVertical="true"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:id="@+id/idtvip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imgip"
+            android:layout_centerInParent="true"
+            android:text="  Done"
+            android:textStyle="bold"
+            android:textColor="@color/cardview_dark_background" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="progres"
+            android:layout_margin="4dp"
+            android:background="@color/cardview_light_background"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:id="@+id/imgip2"
+                android:background="@color/cardview_light_background"
+                android:src="@drawable/delete"
+                android:layout_centerVertical="true"
+                android:layout_height="50dp" />
+
+            <TextView
+                android:id="@+id/idtvipp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/imgip2"
+                android:layout_centerInParent="true"
+                android:text="  Progres"
+                android:textStyle="bold"
+                android:textColor="@color/cardview_dark_background" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="kategori">
+        <item>Kategori</item>
+        <item>Email</item>
+        <item>Hardware</item>
+        <item>Software</item>
+        <item>Jaringan</item>
+        <item>SAP</item>
+        <item>Absen</item>
+        <item>Ipphone</item>
+        <item>CCTV</item>
+    </string-array>
+</resources>
